@@ -11,9 +11,6 @@ public class PageResult<T> implements Serializable {
 
     private Long total;
 
-    @SuppressWarnings("unused")
-    private boolean hasMore;
-
     private Integer p = 1;
 
     private Integer size = 20;

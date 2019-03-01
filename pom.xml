@@ -17,10 +17,7 @@
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <fastjson.version>1.2.47</fastjson.version>
-        <commons-lang3.version>3.7</commons-lang3.version>
-        <joda-time.version>2.10</joda-time.version>
-        <joda-convert.version>2.1.1</joda-convert.version>
+        <commons-lang3.version>3.8.1</commons-lang3.version>
         <guava.version>23.0</guava.version>
 
         <nexus.host>127.0.0.1:8081</nexus.host>
@@ -30,24 +27,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>${fastjson.version}</version>
-        </dependency>
-        <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>${commons-lang3.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>joda-time</groupId>
-            <artifactId>joda-time</artifactId>
-            <version>${joda-time.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.joda</groupId>
-            <artifactId>joda-convert</artifactId>
-            <version>${joda-convert.version}</version>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>

@@ -20,7 +20,7 @@
         <commons-lang3.version>3.8.1</commons-lang3.version>
         <guava.version>23.0</guava.version>
 
-        <nexus.host>127.0.0.1:8081</nexus.host>
+        <nexus.host>172.16.80.40:8081</nexus.host>
 
         <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
     </properties>

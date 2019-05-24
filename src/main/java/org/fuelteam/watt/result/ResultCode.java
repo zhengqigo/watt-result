@@ -24,7 +24,7 @@ public enum ResultCode {
     }
 
     private String code;
-    
+
     private String message;
 
     private ResultCode(String code, String message) {

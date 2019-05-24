@@ -9,7 +9,7 @@ public class Result<T> implements Serializable {
     private String code = ResultCode.SUCCESS.getCode();
     private String message;
     private T data;
-    
+
     public String getCode() {
         return code;
     }

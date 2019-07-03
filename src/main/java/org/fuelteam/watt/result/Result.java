@@ -2,6 +2,10 @@ package org.fuelteam.watt.result;
 
 import java.io.Serializable;
 
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+
+import com.alibaba.fastjson.JSON;
+
 public class Result<T> implements Serializable {
 
     private static final long serialVersionUID = -7039040962200146476L;
@@ -16,7 +20,7 @@ public class Result<T> implements Serializable {
 
     public Result<T> code(String code) {
         this.code = code;
-        this.message = ResultCode.of(code).getMessage();
+        // this.message = ResultCode.of(code).getMessage();
         return this;
     }
 
@@ -66,5 +70,13 @@ public class Result<T> implements Serializable {
     public Result<T> data(T data) {
         this.data = data;
         return this;
+    }
+
+    public String toString() {
+        return ReflectionToStringBuilder.toString(this);
+    }
+
+    public String toJson() {
+        return JSON.toJSONString(this);
     }
 }

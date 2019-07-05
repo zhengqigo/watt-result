@@ -20,7 +20,6 @@ public class Result<T> implements Serializable {
 
     public Result<T> code(String code) {
         this.code = code;
-        // this.message = ResultCode.of(code).getMessage();
         return this;
     }
 

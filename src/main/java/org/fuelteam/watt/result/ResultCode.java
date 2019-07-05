@@ -11,7 +11,7 @@ public enum ResultCode {
     ERROR("999999", "ERROR");
     // @formatter:on
 
-    private static Map<String, ResultCode> map = Maps.newConcurrentMap();
+    private static Map<String, ResultCode> map = Maps.newTreeMap();
 
     static {
         for (ResultCode resultCode : ResultCode.values()) {
